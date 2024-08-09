@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Completo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="caixa principal"></div>
-    <div class="você decide o futuro da IA"></div>
+    <header>
+        <nav>
+            <div class="container">
+                <h1><a href="#">Meu Site</a></h1>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Bem-vindo ao Meu Site</h2>
+                <p>Descubra nossos serviços e entre em contato para mais informações.</p>
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <section id="services">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="service">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites modernos e responsivos.</p>
+                </div>
+                <div class="service">
+                    <h3>Consultoria de TI</h3>
+                    <p>Consultoria especializada para otimizar sua infraestrutura de TI.</p>
+                </div>
+                <div class="service">
+                    <h3>Suporte Técnico</h3>
+                    <p>Suporte técnico para solucionar problemas e garantir a operação contínua.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="formResponse" class="response"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
