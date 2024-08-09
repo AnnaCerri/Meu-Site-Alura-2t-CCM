@@ -1,9 +1,14 @@
-// Função para o slider de imagens
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slides img');
+// script.js
 
-function showSlides() 
-    slides.forEach((slide, index) => {
-        slide.style.display = (index === slideIndex) ? 'block' : 'none';
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
+    const formResponse = document.getElementById('formResponse');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Simulação de envio de formulário
+        formResponse.textContent = 'Obrigado por entrar em contato! Sua mensagem foi enviada com sucesso.';
+        form.reset();
     });
-   
+});
